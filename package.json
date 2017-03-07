@@ -6,6 +6,8 @@
   "author": "Taynara Sene <tay.sene@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.2.9",
     "vue": "^2.2.1"
   }
 }
