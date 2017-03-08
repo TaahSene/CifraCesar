@@ -1,6 +1,8 @@
-Vue.component('cesar-encrypt',{
+var data = { counter: 0 }
+
+Vue.component('cesar-encrypt', {
 	
-	template: '<div class="ui container" id="vue"><div class="ui grid"> <div class="eight wide column"> <p> Cifra de Cesar</p><div class="ui form"><div class="field"><label>Frase para Criptografia</label><textarea rows="2" v-model="frase"></textarea></div><div class="field"><label>Texto que deseja criptografar</label><textarea v-model="message"></textarea></div><button class="positive ui right floated button" v-on:click="encryptMessage">Criptografar</button></div></div><div class="eight wide column"> <br><div class="ui purple segment" v-show="result" v-model="encrypt" style="display:none">{{encrypt}}</div></div></div></div>',
+	template: '<div class="ui grid"> <div class="eight wide column"> <p> Cifra de Cesar</p><div class="ui form"><div class="field"><label>Frase para Criptografia</label><textarea rows="2" v-model="frase"></textarea></div><div class="field"><label>Texto que deseja criptografar</label><textarea v-model="message"></textarea></div><button class="positive ui right floated button" v-on:click="encryptMessage">Criptografar</button></div></div><div class="eight wide column"> <br><div class="ui purple segment" v-show="result" v-model="encrypt" style="display:none">{{encrypt}}</div></div></div>',
 	
 	data: function () {
 		return {
@@ -9,7 +11,7 @@ Vue.component('cesar-encrypt',{
 		  	alfabeto: ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
 		  	encrypt: '',
 		  	result: false
-		  }
+		  };
 	},
   	
   	methods: {
